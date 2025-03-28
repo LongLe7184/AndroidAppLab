@@ -36,12 +36,13 @@
                 android:layout_height="wrap_content"
                 android:text="Họ và tên:"
                 android:textSize="22dp"/>
+
             <EditText
-                android:height="48dp"
                 android:id="@+id/nameET"
                 android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:hint="Student Name"/>
+                android:layout_height="58dp"
+                android:height="48dp"
+                android:hint="Student Name" />
         </TableRow>
 
         <TableRow>
@@ -168,18 +169,21 @@
         android:orientation="horizontal">
 
         <CheckBox
+            android:id="@+id/electionicCB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ĐT"
             android:paddingRight="20dp"/>
 
         <CheckBox
+            android:id="@+id/telecomCB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="VT"
             android:paddingRight="20dp"/>
 
         <CheckBox
+            android:id="@+id/computerCB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MT-HTN"
@@ -206,6 +210,7 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/planET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_border"
