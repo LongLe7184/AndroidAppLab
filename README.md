@@ -12,7 +12,7 @@ _A combination of Mobile Application Development Lab projects_
 _Requirement: create a Student Information form, using bundle & intenr to send the data to second activity_
 
 ### UI design
-![image](https://github.com/user-attachments/assets/fab45dce-c3a5-4a5d-9c14-e039a816a98c)
+![image](https://github.com/user-attachments/assets/505bb2b8-e750-42e4-a476-a20e0a059fed)
 
 ### Result
-![image](https://github.com/user-attachments/assets/acc7f600-c944-447a-8a4e-abe8ce8b40e2)
+![image](https://github.com/user-attachments/assets/a745cbf6-c6af-4692-bfcb-9059d2e2ef05)
