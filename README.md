@@ -12,7 +12,7 @@ _A combination of Mobile Application Development Lab projects_
 _Requirement: create a Student Information form, using bundle & intenr to send the data to second activity_
 (Go to ⇲[Week1 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week1-lab))
 
-![image](https://github.com/user-attachments/assets/c854df8b-7683-41dc-a938-ad4aadf2ed7b)
+![image](https://github.com/user-attachments/assets/b7fa6f2f-e655-4d62-8d37-5cc67cd94514)
 
 ## Week 2
 ## Week 3
