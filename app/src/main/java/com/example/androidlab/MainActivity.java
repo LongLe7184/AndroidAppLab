@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button sendBT = findViewById(R.id.sendBT);
-
         EditText nameET = findViewById(R.id.nameET);
         EditText idET = findViewById(R.id.idET);
         EditText classET = findViewById(R.id.classET);
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox box1 = findViewById(R.id.electionicCB);
         CheckBox box2 = findViewById(R.id.telecomCB);
         CheckBox box3 = findViewById(R.id.computerCB);
-
+        Button sendBT = findViewById(R.id.sendBT);
 
         sendBT.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,13 +84,13 @@ public class MainActivity extends AppCompatActivity {
                     //Get Majority
                     String mj = "";
                     if(box1.isChecked()){
-                        mj += "| Điện tử |";
+                        mj += "Điện tử";
                     }
                     if(box2.isChecked()){
-                        mj += "| Viễn Thông |";
+                        mj += "Viễn Thông";
                     }
                     if(box3.isChecked()){
-                        mj += "| Máy tính - Hệ thống nhúng |";
+                        mj += "Máy tính - Hệ thống nhúng";
                     }
                     transBundle.putString("mj", mj);
 

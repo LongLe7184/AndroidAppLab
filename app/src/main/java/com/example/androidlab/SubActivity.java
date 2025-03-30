@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,23 +28,26 @@ public class SubActivity extends AppCompatActivity {
         Button backBT = findViewById(R.id.backBT);
 
         //Link object by component ID
-        EditText displayET = findViewById(R.id.displayET);
+        TextView nameTV = findViewById(R.id.nameTV);
+        TextView sidTV = findViewById(R.id.sidTV);
+        TextView classTV = findViewById(R.id.classTV);
+        TextView phoneNumTV = findViewById(R.id.phoneNumTV);
+        TextView seniorityTV = findViewById(R.id.seniorityTV);
+        TextView majorityTV = findViewById(R.id.majorityTV);
+        TextView planTV = findViewById(R.id.planTV);
+
         //Get bundle
         Bundle bundle = getIntent().getBundleExtra("MyData1");
 
         //Get data and display
         if(bundle != null){
-            String str = "";
-            str += "THÔNG TIN SINH VIÊN\n\n";
-            str += "Họ và tên: " + bundle.getString("name") + "\n";
-            str += "MSSV: " + String.valueOf(bundle.getInt("sid")) + "\n";
-            str += "Lớp: " + bundle.getString("cid") + "\n";
-            str += "SĐT: " + bundle.getString("pn") + "\n";
-            str += "Sinh viên năm: " + String.valueOf(bundle.getInt("sen")) + "\n";
-            str += "Chuyên ngành: " + bundle.getString("mj") + "\n";
-
-            str += "Kế hoạch bản thân: " + bundle.getString("plan");
-            displayET.setText(str);
+            nameTV.setText(bundle.getString("name"));
+            sidTV.setText(String.valueOf(bundle.getInt("sid")));
+            classTV.setText(bundle.getString("cid"));
+            phoneNumTV.setText(bundle.getString("pn"));
+            seniorityTV.setText(String.valueOf(bundle.getInt("sen")));
+            majorityTV.setText(bundle.getString("mj"));
+            planTV.setText(bundle.getString("plan"));
         }
 
         backBT.setOnClickListener(new View.OnClickListener() {
