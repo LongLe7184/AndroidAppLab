@@ -14,6 +14,9 @@ _Requirement: create a simple calculator_
 _UI design_
 ![image](https://github.com/user-attachments/assets/3fdd3d0f-4665-4418-86ea-a7b4c530cda7)
 
+_Testing Result_
+![image](https://github.com/user-attachments/assets/40234c40-3c35-4550-acd4-7d8a548bc9f4)
+
 _Pseudo Logic Design_
 ![image](https://github.com/user-attachments/assets/be7e6f34-3d90-44be-84d6-faa1cc544c25)
 
