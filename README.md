@@ -15,5 +15,10 @@ _Requirement: create a Student Information form, using bundle & intenr to send t
 ![image](https://github.com/user-attachments/assets/b7fa6f2f-e655-4d62-8d37-5cc67cd94514)
 
 ## Week 2
+_Requirement: create a simple calculator_
+(Go to ⇲[Week2 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week2-lab))
+
+![image](https://github.com/user-attachments/assets/e788ca80-c3b4-4306-afa7-fd5e5259550e)
+
 ## Week 3
 ## Week 4
