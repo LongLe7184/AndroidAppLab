@@ -8,7 +8,7 @@ _A combination of Mobile Application Development Lab projects_
 |------------|----------------|----------------------------------------------|
 | 21200310   | LÊ NGỌC LONG   | [@LongLe7184](https://github.com/LongLe7184) |
 
-## Week 1 - Activities & Intents
+## Week 3 - Layout Design
 _Requirement: design login/register layout_
 
 _Layout Design_
