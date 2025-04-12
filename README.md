@@ -9,11 +9,10 @@ _A combination of Mobile Application Development Lab projects_
 | 21200310   | LÊ NGỌC LONG   | [@LongLe7184](https://github.com/LongLe7184) |
 
 ## Week 1 - Activities & Intents
-_Requirement: create a Student Information form, using bundle & intenr to send the data to second activity_
-(Go to ⇲[Week1 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week1-lab))
+_Requirement: design login/register layout_
 
-![image](https://github.com/user-attachments/assets/c854df8b-7683-41dc-a938-ad4aadf2ed7b)
+_Layout Design_
+![image](https://github.com/user-attachments/assets/d6e8ecee-10c2-4a1b-8e92-9cba9f534a23)
 
-## Week 2
-## Week 3
-## Week 4
+_Result_
+![image](https://github.com/user-attachments/assets/a5dd39ec-49f9-4343-bca4-becd4c554d42)
