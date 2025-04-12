@@ -21,4 +21,9 @@ _Requirement: create a simple calculator_
 ![image](https://github.com/user-attachments/assets/e788ca80-c3b4-4306-afa7-fd5e5259550e)
 
 ## Week 3
+_Requirement: design login/register layout_
+(Go to ⇲[Week3 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week3-lab))
+
+![image](https://github.com/user-attachments/assets/5f9bdbf6-adf3-48d1-ba3c-c069876d1ea7)
+
 ## Week 4
