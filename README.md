@@ -26,4 +26,14 @@ _Requirement: design login/register layout_
 
 ![image](https://github.com/user-attachments/assets/5f9bdbf6-adf3-48d1-ba3c-c069876d1ea7)
 
-## Week 4
+## Week 4.1 - Specify Layout Design (in Linear Layout)
+_Ex 4.1 Requirement: create a circular layout_
+(Go to ⇲[Week4.1 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week4-lab1))
+
+![image](https://github.com/user-attachments/assets/8441ef03-3a33-448c-9a2f-b6d4c3acae30)
+
+## Week 4.2 - Quiz Game
+_Ex 4.2 Requirement: create a Quiz game layout_
+(Go to ⇲[Week4.2 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week4-lab2))
+
+![image](https://github.com/user-attachments/assets/03a6a6e9-60ce-42a8-a8b6-11cff4870ecd)
