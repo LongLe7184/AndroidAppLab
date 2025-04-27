@@ -37,3 +37,15 @@ _Ex 4.2 Requirement: create a Quiz game layout_
 (Go to ⇲[Week4.2 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week4-lab2))
 
 ![image](https://github.com/user-attachments/assets/03a6a6e9-60ce-42a8-a8b6-11cff4870ecd)
+
+## Week 5.1 - ListView Layout
+_Ex 5.1 Requirement: create a ListView layout_
+(Go to ⇲[Week5.1 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week5-lab1))
+
+![image](https://github.com/user-attachments/assets/3deafb89-a181-4352-8559-42ddd8ee51c6)
+
+## Week 5.2 - ListView Layout
+_Ex 5.2 Requirement: create a ListView layout_
+(Go to ⇲[Week5.2 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week5-lab2))
+
+![image](https://github.com/user-attachments/assets/67487665-f39e-4a97-8f2b-647429b94afa)
