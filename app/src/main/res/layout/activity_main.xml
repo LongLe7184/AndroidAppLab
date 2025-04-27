@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_round_border"
         android:padding="5dp"
-        android:text="Emote Sticker ListView"
+        android:text="Fruit Calories ListView"
         android:textColor="#FFFFFF"
         android:textSize="35dp"
         android:textStyle="bold"
