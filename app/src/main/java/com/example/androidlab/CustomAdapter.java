@@ -1,5 +1,6 @@
 package com.example.androidlab;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,10 @@ public class CustomAdapter extends BaseAdapter {
     private Context context;
     private String[] labels;
     private String[] descriptions;
-    private int[] icons;
+//    private int[] icons;
+    private Bitmap[] icons;
 
-    public CustomAdapter(Context context, String[] labels, String[] descriptions, int[] icons) {
+    public CustomAdapter(Context context, String[] labels, String[] descriptions, Bitmap[] icons) {
         this.context = context;
         this.labels = labels;
         this.descriptions = descriptions;
@@ -46,7 +48,8 @@ public class CustomAdapter extends BaseAdapter {
         TextView label = convertView.findViewById(R.id.item_label);
         TextView description = convertView.findViewById(R.id.item_description);
 
-        icon.setImageResource(icons[position]);
+//        icon.setImageResource(icons[position]);
+        icon.setImageBitmap(icons[position]);
         label.setText(labels[position]);
         description.setText(descriptions[position]);
 

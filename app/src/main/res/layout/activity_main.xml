@@ -11,7 +11,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rectangle_round_border"
+        android:background="#3C7DEF"
         android:padding="5dp"
         android:text="Emote Sticker ListView"
         android:textColor="#FFFFFF"
