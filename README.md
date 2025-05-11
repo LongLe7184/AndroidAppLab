@@ -49,3 +49,9 @@ _Ex 5.2 Requirement: create a ListView layout_
 (Go to ⇲[Week5.2 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week5-lab2))
 
 ![image](https://github.com/user-attachments/assets/67487665-f39e-4a97-8f2b-647429b94afa)
+
+## Week 6 - SQLite Database
+_Requirement: create a SQLite database to storing student's informations_
+(Go to ⇲[Week6 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week6-lab))
+
+![image](https://github.com/user-attachments/assets/fe4e47c6-7907-40b1-9ca4-290e7c7bf6af)
