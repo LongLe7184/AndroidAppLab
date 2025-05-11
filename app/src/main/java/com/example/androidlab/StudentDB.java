@@ -32,47 +32,47 @@ public class StudentDB {
             try {
                 Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker8);
                 byte[] imageBytes = imageToByteArray(bitmap);
-                Student x = new Student(21200310, "Le Ngoc Long", imageBytes);
+                Student x = new Student(21200310, "Le Ngoc Long", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 boolean success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker2);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200311, "Le Lai", imageBytes);
+                x = new Student(21200311, "Le Lai", imageBytes, "21-VienThong", "0123456789", 3, "Vien thong-Mang");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker3);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200312, "Nhu Ngoc", imageBytes);
+                x = new Student(21200312, "Nhu Ngoc", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker4);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200313, "Bao Y", imageBytes);
+                x = new Student(21200313, "Bao Y", imageBytes, "21-DienTu", "0123456789", 4, "DT");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker5);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200314, "Tran Quang", imageBytes);
+                x = new Student(21200314, "Tran Quang", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker6);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200315, "Thanh Loc", imageBytes);
+                x = new Student(21200315, "Thanh Loc", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker7);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200316, "Do Dat", imageBytes);
+                x = new Student(21200316, "Do Dat", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker1);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200317, "Nguyen Ninh", imageBytes);
+                x = new Student(21200317, "Nguyen Ninh", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 success = databaseHelper.addStudent(x);
 
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker9);
                 imageBytes = imageToByteArray(bitmap);
-                x = new Student(21200318, "Le Hoa", imageBytes);
+                x = new Student(21200318, "Le Hoa", imageBytes, "21-Nhung", "0123456789", 4, "MT-HTN");
                 success = databaseHelper.addStudent(x);
 
             } catch (Exception e) {

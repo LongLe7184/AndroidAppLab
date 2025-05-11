@@ -1,7 +1,11 @@
 package com.example.androidlab;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,9 +41,47 @@ public class SubActivity extends AppCompatActivity {
         TextView planTV = findViewById(R.id.planTV);
 
         Intent intent = getIntent();
-        int studentID = intent.getIntExtra("STUDENT_ID", -1);
-        if(studentID != -1) {
-            sidTV.setText(String.valueOf(studentID));
+        int lookupID = intent.getIntExtra("STUDENT_ID", -1);
+        if(lookupID != -1) {
+            StudentDB db = StudentDB.getInstance(this);
+            DatabaseHelper dbHelper = db.getDatabaseHelper();
+
+            // Make sure having at least one student in the database
+            db.ensureStudentExists();
+
+            Cursor cursor = dbHelper.getAllStudents();
+
+            if (cursor.moveToFirst()) {
+                int n = 0;
+                int idIdx, nameIdx, classIdx, phoneNumberIdx, majorityIdx, seniorityIdx;
+                int studentID;
+                String name, classID, phoneNumber, majority;
+
+                do {
+                    idIdx = cursor.getColumnIndex("studentID");
+                    nameIdx = cursor.getColumnIndex("name");
+                    classIdx = cursor.getColumnIndex("class");
+                    phoneNumberIdx = cursor.getColumnIndex("phoneNumber");
+                    seniorityIdx = cursor.getColumnIndex("seniority");
+                    majorityIdx = cursor.getColumnIndex("majority");
+
+                    studentID = cursor.getInt(idIdx);
+
+                    if(studentID == lookupID){
+                        nameTV.setText(cursor.getString(nameIdx));
+                        sidTV.setText(String.valueOf(lookupID));
+                        classTV.setText(cursor.getString(classIdx));
+                        phoneNumTV.setText(cursor.getString(phoneNumberIdx));
+                        seniorityTV.setText(cursor.getString(seniorityIdx));
+                        majorityTV.setText(cursor.getString(majorityIdx));
+                        break;
+                    }
+                    n++;
+                } while (cursor.moveToNext());
+            } else {
+                Log.e("SubActivity", "No students found in database");
+            }
+            cursor.close();
         }
 
         backBT.setOnClickListener(new View.OnClickListener() {

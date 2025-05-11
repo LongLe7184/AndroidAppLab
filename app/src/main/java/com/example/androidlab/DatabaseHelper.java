@@ -14,6 +14,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_IMAGE = "image";
     private static final String COLUMN_ID = "studentID";
     private static final String COLUMN_NAME = "name";
+    private static final String COLUMN_CLASS = "class";
+    private static final String COLUMN_PHONE_NUMBER = "phoneNumber";
+    private static final String COLUMN_SENIORITY = "seniority";
+    private static final String COLUMN_MAJORITY = "majority";
     private static final String TAG = "DatabaseHelperTag"; // Added unique tag
 
     public DatabaseHelper(Context context) {
@@ -25,7 +29,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (" +
                 COLUMN_IMAGE + " BLOB, " +
                 COLUMN_ID + " INTEGER PRIMARY KEY, " +
-                COLUMN_NAME + " TEXT)";
+                COLUMN_NAME + " TEXT, " +
+                COLUMN_CLASS + " TEXT, " +
+                COLUMN_PHONE_NUMBER + " TEXT, " +
+                COLUMN_SENIORITY + " INTEGER, " +
+                COLUMN_MAJORITY + " TEXT)";
         db.execSQL(createTable);
     }
 
@@ -60,22 +68,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         values.put(COLUMN_ID, student.getStudentID());
         values.put(COLUMN_NAME, student.getName());
+        values.put(COLUMN_CLASS, student.getClassID());
+        values.put(COLUMN_PHONE_NUMBER, student.getPhoneNumber());
+        values.put(COLUMN_SENIORITY, student.getSeniority());
+        values.put(COLUMN_MAJORITY, student.getMajority());
 
         long result = db.insert(TABLE_NAME, null, values);
         Log.d(TAG, "Insert result: " + result + " (success = " + (result != -1) + ")");
 
         // Verify the data was inserted correctly
-        Cursor verify = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_ID + " = ?",
-                new String[]{String.valueOf(student.getStudentID())});
-        if (verify.moveToFirst()) {
-            byte[] checkImage = verify.getBlob(verify.getColumnIndex(COLUMN_IMAGE));
-            Log.d(TAG, "Verified in DB - Name: " + verify.getString(verify.getColumnIndex(COLUMN_NAME)) +
-                    ", Has image: " + (checkImage != null) +
-                    (checkImage != null ? ", Image size: " + checkImage.length : ""));
-        } else {
-            Log.e(TAG, "Failed to verify student in database after insert");
-        }
-        verify.close();
+//        Cursor verify = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_ID + " = ?",
+//                new String[]{String.valueOf(student.getStudentID())});
+//        if (verify.moveToFirst()) {
+//            byte[] checkImage = verify.getBlob(verify.getColumnIndex(COLUMN_IMAGE));
+//        } else {
+//            Log.e(TAG, "Failed to verify student in database after insert");
+//        }
+//        verify.close();
 
         return result != -1;
     }
