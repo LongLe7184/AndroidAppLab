@@ -8,22 +8,11 @@ _A combination of Mobile Application Development Lab projects_
 |------------|----------------|----------------------------------------------|
 | 21200310   | LÊ NGỌC LONG   | [@LongLe7184](https://github.com/LongLe7184) |
 
-## Week 1 - Activities & Intents
-_Requirement: create a Student Information form, using bundle & intenr to send the data to second activity_
-(Go to ⇲[Week1 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week1-lab))
+## Week 6 - SQLite
+_Requirement: create a database for app using SQLite for Student object_
 
-![image](https://github.com/user-attachments/assets/b7fa6f2f-e655-4d62-8d37-5cc67cd94514)
+_Layout Design_
+![image](https://github.com/user-attachments/assets/5fcb9050-b8fd-447f-8996-aefadc552e42)
 
-## Week 2
-_Requirement: create a simple calculator_
-(Go to ⇲[Week2 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week2-lab))
-
-![image](https://github.com/user-attachments/assets/e788ca80-c3b4-4306-afa7-fd5e5259550e)
-
-## Week 3
-_Requirement: design login/register layout_
-(Go to ⇲[Week3 branch](https://github.com/LongLe7184/AndroidAppLab/tree/week3-lab))
-
-![image](https://github.com/user-attachments/assets/5f9bdbf6-adf3-48d1-ba3c-c069876d1ea7)
-
-## Week 4
+_Result_
+![image](https://github.com/user-attachments/assets/fe4e47c6-7907-40b1-9ca4-290e7c7bf6af)
